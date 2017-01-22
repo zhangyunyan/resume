@@ -1,0 +1,243 @@
+html,body,.main{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.swiper-container{
+    width: 100%;
+    height: 100%;
+}
+.main .swiper-slide{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide1{
+    background: url("../img/bg1.jpg") no-repeat;
+    background-size:100% 100%;
+}
+.slide2,.slide3,.slide4{
+    background: url("../img/bg2.jpg") no-repeat;
+    background-size:100% 100%;
+}
+.slide5{
+    background: url("../img/bg3.png") no-repeat;
+    background-size:100% 100%;
+}
+/*slide1*/
+.slide1 .wireframe{
+    /*width: 2.79rem;
+    height: 2.79rem;*/
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    margin: 1rem -2.47rem 0;
+    width: 4.94rem;
+    height: 4.94rem;
+}
+.slide1 i.i1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin:-3.6rem -1.4rem 0;
+    width: 2.8rem;
+    height: 2.8rem;
+    background: rgb(96, 220, 219);
+    transform: rotate(45deg);
+}
+.slide1 i.i2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -1rem;
+    width: 2rem;
+    height: 2rem;
+    background: rgba(96, 220, 219,.3);
+    transform: rotate(45deg);
+}
+.slide1 .span1{
+    position: absolute;
+    z-index: 1;
+    width: 3rem;
+    height: 0.2rem;
+    line-height: 0.2rem;
+    text-align: center;
+    color: white;
+    font-size: 0.6rem;
+    top:30%;
+    left: 50%;
+    margin: -0.2rem -1.5rem 0;
+}
+.slide1 .span2{
+    position: absolute;
+    z-index: 1;
+    width: 2rem;
+    height: 0.2rem;
+    line-height: 0.2rem;
+    text-align: center;
+    color: white;
+    font-size: 0.4rem;
+    top:35%;
+    left: 50%;
+    margin: 0 -1rem 0;
+}
+.slide1 .span3{
+    position: absolute;
+    z-index: 1;
+    width: 2rem;
+    height: 0.2rem;
+    line-height: 0.2rem;
+    text-align: center;
+    color: #bdbdbd;
+    font-size: 0.4rem;
+    bottom:20%;
+    left: 50%;
+    margin: 0 -1rem 0;
+}
+#page1 .span1{
+    animation: rotateIn 1s 1 both;
+}
+
+
+/*slide2*/
+.slide2 i.i1,.slide3 i.i1{
+    position: absolute;
+    top: -0.4rem;
+    left: -0.4rem;
+    width: 3rem;
+    height: 3rem;
+    background: rgb(96, 220, 219);
+    transform: rotate(45deg);
+}
+.slide2 i.i2,.slide3 i.i2{
+    position: absolute;
+    top: -0.4rem;
+    left: -0.1rem;
+    width: 3rem;
+    height: 3rem;
+    background: rgba(96, 220, 219,.5);
+    transform: rotate(45deg);
+}
+.slide2 span,.slide3 span{
+    position: absolute;
+    left: 4%;
+    top: 5%;
+    z-index: 1;
+    font-size: 0.6rem;
+    color: #eeeeee;
+}
+.slide2 span a,.slide3 span a{
+    display: inline-block;
+    font-size: 0.25rem;
+    line-height: 0.3rem;
+    color: white;
+}
+.slide2 img{
+    opacity: 0;
+    position: absolute;
+    right: 0.2rem;
+    top: 33%;
+    height: 2.7rem;
+    border: 2px solid #60DCDB;
+}
+.slide2 ul{
+    opacity: 0;
+    position: absolute;
+    left: 0.3rem;
+    font-size: .3rem;
+    top: 33%;
+    color: white;
+}
+.slide2 ul li{
+    line-height: .5rem;
+}
+.slide2 dl{
+    opacity: 0;
+    width: 100%;
+    padding: 0.3rem;
+    position: absolute;
+    text-align: center;
+    bottom: 0.2rem;
+    color: white;
+}
+.slide2 dl dt{
+    width: 2rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    font-size: 0.4rem;
+    margin-bottom: 0.2rem;
+    background: #60DCDB;
+}
+.slide2 dl dd{
+    line-height: 0.4rem;
+    text-align: left;
+    padding-right: 0.5rem;
+    font-size: 0.28rem;
+}
+#page2 ul{
+    opacity: 1;
+    animation: zoomInLeft 1s 1 both;
+    /*animation: bounceInLeft 1s 1 both;*/
+}
+#page2 img{
+    opacity: 1;
+    animation: zoomIn 1s 1 1s both;
+}
+#page2 dl{
+    opacity: 1;
+    animation: zoomInUp 1s 1 2s both;
+    /*animation: bounceInUp 1s 1 2s both;*/
+}
+
+/*slide3*/
+.slide3 ul{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 50%;
+    margin: -24% -40% ;
+}
+.slide3 ul li{
+    /*float: left;*/
+    /*height: 1rem;*/
+    margin: 0.1rem;
+}
+.slide3 ul li b{
+    /*display: inline-block;*/
+    float: left;
+    width: 0.7rem;
+    height: 0.7rem;
+    border: 0.08rem dotted #60DCDB;
+    font-size: 0.3rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 0.7rem;
+}
+.slide3 ul li u{
+    /*display: inline-block;*/
+    margin: 0.2rem 0 0 0.2rem;
+    float: left;
+    width: 60%;
+    height: 0.5rem;
+    background: white;
+}
+.slide3 ul li u em{
+    /*display: inline-block;*/
+    float: left;
+    width: 90%;
+    height: 0.5rem;
+    background: #60DCDB;
+}
+.slide3 ul li.li2 u em{
+    width: 70%;
+}
+.slide3 ul li.li3 u em{
+    width: 98%;
+}
+.slide3 ul li.li4 u em{
+    width: 50%;
+}

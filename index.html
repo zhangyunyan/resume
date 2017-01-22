@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/reset.min.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script>
+        var winW=document.documentElement.clientWidth;
+        var desW=640;
+        document.documentElement.style.fontSize=winW/desW*100+'px';
+    </script>
+</head>
+<body>
+<article class="main">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide1">
+                <span class="span1">个人简历</span>
+                <span class="span2">RESUME</span>
+                <span class="span3">张运燕</span>
+                <img class="wireframe" src="img/wireframe.png"/>
+                <i class="i1"></i>
+                <i class="i2"></i>
+            </div>
+            <div class="swiper-slide slide2">
+                <span>个人信息<br>
+                    <a href="##">Personal<br> information</a>
+                </span>
+                <i class="i1"></i>
+                <i class="i2"></i>
+                <img src="img/pic.jpg" />
+                <ul>
+                    <li>姓名：张运燕</li>
+                    <li>所在地：北京</li>
+                    <li>出生年月：1991.12</li>
+                    <li>学历：大专</li>
+                    <li>毕业院校：邯郸大学</li>
+                    <li>专业：软件工程</li>
+                </ul>
+                <dl>
+                    <dt>自我评价</dt>
+                    <dd>
+                        ★ 个性稳重、成熟，为人诚实，乐于助人，具高度责任感。
+                    </dd>
+                    <dd>
+                        ★ 工作态度：有很好的团队精神和协作精神，积极的工作态度，能够在不同文化和工作人员的背景下出色地工作。
+                    </dd>
+                    <dd>
+                        ★ 本人好学上进，诚信、敬业、责任心强，有强烈的团体精神，对工作认真积极，严谨负责。
+                    </dd>
+                </dl>
+            </div>
+            <div class="swiper-slide slide3">
+                <span>02</span>
+                <i class="i1"></i>
+                <i class="i2"></i>
+                <ul>
+                    <li class="li1 clear"><b>WS</b><u><em></em></u></li>
+                    <li class="li2 clear"><b>DW</b><u><em></em></u></li>
+                    <li class="li3 clear"><b>PS</b><u><em></em></u></li>
+                    <li class="li4 clear"><b>AI</b><u><em></em></u></li>
+                </ul>
+            </div>
+            <div class="swiper-slide slide4"></div>
+            <div class="swiper-slide slide5"></div>
+
+        </div>
+        <!--<div class="swiper-pagination"></div>-->
+        <!--<div class="swiper-scrollbar"></div>-->
+    </div>
+</article>
+<script src="js/swiper.min.js"></script>
+<script>
+    var mySwiper=new Swiper('.swiper-container',{
+        direction:'vertical',
+        loop:true,
+        onTransitionEnd:function(swiper){
+            var curIndex=swiper.activeIndex;
+            var slides=swiper.slides;
+            [].forEach.call(slides,function(item,index){
+                item.id='';
+                if(index==curIndex){
+                    switch (index){
+                        case 0:
+                            item.id='page'+slides.length-2;
+                            break;
+                        case slides.length-1:
+                            item.id='page1';
+                            break;
+                        default :
+                            item.id='page'+index;
+                    }
+                }
+            })
+        }
+
+    })
+</script>
+
+</body>
+</html>
